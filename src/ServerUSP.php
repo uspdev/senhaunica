@@ -21,7 +21,7 @@ class ServerUSP extends Server
      */
     public function urlTemporaryCredentials()
     {
-        return 'https://uspdigital.usp.br/wsusuario/oauth/request_token';
+        return getenv('SENHAUNICA_URL') . '/wsusuario/oauth/request_token';
     }
 
     /**
@@ -29,7 +29,7 @@ class ServerUSP extends Server
      */
     public function urlAuthorization()
     {
-        return 'https://uspdigital.usp.br/wsusuario/oauth/authorize';
+        return getenv('SENHAUNICA_URL') . '/wsusuario/oauth/authorize';
     }
 
     /**
@@ -37,7 +37,7 @@ class ServerUSP extends Server
      */
     public function urlTokenCredentials()
     {
-        return 'https://uspdigital.usp.br/wsusuario/oauth/access_token';
+        return getenv('SENHAUNICA_URL') . '/wsusuario/oauth/access_token';
     }
 
     /**
@@ -45,7 +45,7 @@ class ServerUSP extends Server
      */
     public function urlUserDetails()
     {
-        return 'https://uspdigital.usp.br/wsusuario/oauth/usuariousp';
+        return getenv('SENHAUNICA_URL') . '/wsusuario/oauth/usuariousp';
     }
 
     /**
