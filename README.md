@@ -57,7 +57,6 @@ use Uspdev\Senhaunica\Senhaunica;
 putenv('SENHAUNICA_KEY=');
 putenv('SENHAUNICA_SECRET=');
 putenv('SENHAUNICA_CALLBACK_ID=');
-putenv('SENHAUNICA_URL=https://uspdigital.usp.br');
 
 Senhaunica::login();
 
