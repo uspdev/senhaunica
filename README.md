@@ -57,6 +57,7 @@ use Uspdev\Senhaunica\Senhaunica;
 putenv('SENHAUNICA_KEY=');
 putenv('SENHAUNICA_SECRET=');
 putenv('SENHAUNICA_CALLBACK_ID=');
+putenv('SENHAUNICA_BASE_URL=http://auth.local:3141/wsusuario/oauth'); // opcional, default é: https://uspdigital.usp.br/wsusuario/oauth
 
 Senhaunica::login();
 
